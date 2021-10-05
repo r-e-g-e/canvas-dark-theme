@@ -1,0 +1,15 @@
+{
+  "name": "Kenzie canvas dark theme",
+  "description": "Kenzie canvas dark theme",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action":{
+    "default_title":"dark theme",
+    "default_popup":"./src/index.html"
+  },
+  "content_scripts":[{
+    "matches":["https://alunos.kenzie.com.br/*"],
+    "js":["./src/background.js"],
+    "run_at":"document_end"
+  }]
+}

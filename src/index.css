@@ -1,17 +1,22 @@
+html{
+  max-height: 80px;
+}
+
 body{
   background-color: #333;
   color:white;
-
+  
   width: 300px;
-  height: 100px;
 }
 
 section#credits{
   display: flex;
+  flex-direction: column;
   
   width: 100vw;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 a{
